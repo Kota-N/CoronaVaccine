@@ -1,0 +1,52 @@
+.hire-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 7px;
+  position: fixed;
+  top: 35vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  width: 100vw;
+  height: 65vh;
+  transition: left 0.3s;
+}
+
+.hire-menu h4 {
+  font-size: 20px;
+}
+
+.hire-menu img {
+  margin: 10px;
+  width: 100px;
+}
+
+.hire-menu button {
+  border: none;
+  width: 40vw;
+  height: 80px;
+  padding: 10px;
+  margin: 12px 2px 2px;
+  cursor: pointer;
+  border-radius: 2px;
+  font-size: 20px;
+  font-weight: 200;
+  color: rgb(35, 50, 68);
+}
+
+.hire-menu .upgrade {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 50px;
+  color: white;
+  background-color: rgb(35, 50, 68);
+  box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.8);
+}
+
+.hire-menu .hide {
+  display: none;
+}

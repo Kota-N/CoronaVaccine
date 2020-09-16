@@ -1,0 +1,30 @@
+.HireNav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  height: 20vh;
+}
+
+.HireNav .helper-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.HireNav .helper-container .helper {
+  position: relative;
+  width: 27vw;
+  height: 27vw;
+  background-color: rgb(56, 80, 110);
+  border-radius: 4px;
+  margin: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.HireNav .helper-container .helper img {
+  width: 20vw;
+}

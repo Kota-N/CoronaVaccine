@@ -1,0 +1,55 @@
+.HireTutorial .hire-hint {
+  position: absolute;
+  top: 70vh;
+  left: 5vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90vw;
+  background-color: rgb(35, 50, 68);
+  border-radius: 5px;
+  padding: 5px;
+  animation: blink 3s infinite ease-in-out;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(0.8);
+  }
+  25% {
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(5px) scale(0.785);
+  }
+  75% {
+    opacity: 0.8;
+  }
+}
+.HireTutorial p {
+  line-height: 40px;
+  text-align: center;
+  color: white;
+  font-weight: 200;
+}
+.HireTutorial button {
+  border: none;
+  padding: 10px;
+  margin-top: 20px;
+  width: calc(100% + 30px);
+  border-radius: 2px;
+  color: rgb(35, 50, 68);
+  background-color: whitesmoke;
+  font-size: 20px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  font-weight: 400;
+}
+
+.HireTutorial .hide {
+  display: none;
+}

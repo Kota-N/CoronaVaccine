@@ -3,6 +3,16 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import './css/Zombies.css';
+import './css/Parameters.css';
+import './css/Clicker.css';
+import './css/HireNav.css';
+import './css/hire-menu.css';
+import './css/progress-bar.css';
+import './css/Tutorial.css';
+import './css/StartMessage.css';
+import './css/HireTutorial.css';
+import './css/ClickerExp.css';
 
 ReactDOM.render(
   <React.StrictMode>

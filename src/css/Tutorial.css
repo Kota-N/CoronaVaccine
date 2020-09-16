@@ -1,0 +1,103 @@
+.Tutorial .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.Tutorial .message-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 50vh;
+  left: 50vw;
+  width: 70vw;
+  transform: translate(-50%, -50%);
+  background-color: rgb(35, 50, 68);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.Tutorial .message-container p {
+  line-height: 40px;
+  text-align: center;
+  color: white;
+  font-weight: 200;
+}
+.Tutorial .message-container button {
+  border: none;
+  padding: 10px;
+  margin-top: 20px;
+  width: calc(100% + 30px);
+  border-radius: 2px;
+  background-color: whitesmoke;
+  color: rgb(56, 80, 110);
+  font-size: 20px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  font-weight: 400;
+}
+
+.Tutorial .hint-container {
+  position: absolute;
+  top: 78vh;
+  left: calc(50vw - 200px);
+}
+
+.Tutorial .hint {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 260px;
+  background-color: rgb(35, 50, 68);
+  border-radius: 5px;
+  padding: 5px;
+  animation: blink 3s infinite ease-in-out;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(0.8);
+  }
+  25% {
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(5px) scale(0.785);
+  }
+  75% {
+    opacity: 0.8;
+  }
+}
+
+.Tutorial .hint-container p {
+  line-height: 40px;
+  text-align: center;
+  color: white;
+  font-weight: 200;
+}
+.Tutorial .hint-container button {
+  border: none;
+  padding: 10px;
+  margin-top: 20px;
+  width: calc(100% + 30px);
+  border-radius: 2px;
+  color: rgb(35, 50, 68);
+  background-color: whitesmoke;
+  font-size: 20px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  font-weight: 400;
+}
+
+.Tutorial .hide {
+  display: none;
+}

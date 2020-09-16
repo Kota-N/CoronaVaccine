@@ -1,0 +1,48 @@
+.StartMessage .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+}
+
+.StartMessage .message-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 50vh;
+  left: 50vw;
+  width: 70vw;
+  transform: translate(-50%, -50%);
+  background-color: rgb(35, 50, 68);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.StartMessage .message-container p {
+  line-height: 40px;
+  text-align: center;
+  color: white;
+  font-weight: 200;
+}
+.StartMessage .message-container button {
+  border: none;
+  padding: 10px;
+  margin-top: 20px;
+  width: calc(100% + 30px);
+  border-radius: 2px;
+  background-color: whitesmoke;
+  color: rgb(56, 80, 110);
+  font-size: 20px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  font-weight: 400;
+}
+
+.StartMessage .hide {
+  display: none;
+}

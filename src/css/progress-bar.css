@@ -1,0 +1,80 @@
+.WorkerProgressBar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: inherit;
+  height: inherit;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.WorkerProgressBar .empty-bar {
+  position: relative;
+  height: 10px;
+  width: 80%;
+  background-color: black;
+  border-radius: 10px;
+}
+
+.WorkerProgressBar .empty-bar .progress-bar {
+  position: absolute;
+  height: 10px;
+  width: 100%;
+  background-color: rgb(56, 80, 110);
+  border-radius: 4px;
+}
+
+.FeministProgressBar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: inherit;
+  height: inherit;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.FeministProgressBar .empty-bar {
+  position: relative;
+  height: 10px;
+  width: 80%;
+  background-color: black;
+  border-radius: 10px;
+}
+
+.FeministProgressBar .empty-bar .progress-bar {
+  position: absolute;
+  height: 10px;
+  width: 100%;
+  background-color: rgb(56, 80, 110);
+  border-radius: 4px;
+}
+
+.AnimalProgressBar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: inherit;
+  height: inherit;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.AnimalProgressBar .empty-bar {
+  position: relative;
+  height: 10px;
+  width: 80%;
+  background-color: black;
+  border-radius: 10px;
+}
+
+.AnimalProgressBar .empty-bar .progress-bar {
+  position: absolute;
+  height: 10px;
+  width: 100%;
+  background-color: rgb(56, 80, 110);
+  border-radius: 4px;
+}

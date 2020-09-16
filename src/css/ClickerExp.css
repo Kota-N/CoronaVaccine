@@ -1,0 +1,64 @@
+.ClickerExp {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: inherit;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.ClickerExp .empty-bar {
+  position: relative;
+  height: 14px;
+  width: 90px;
+  background-color: black;
+  border-radius: 2px;
+  box-shadow: 0 0 10px rgba(56, 56, 56, 0.8);
+}
+
+.ClickerExp .empty-bar .progress-bar {
+  position: absolute;
+  height: 14px;
+  width: 100%;
+  background-color: rgb(56, 80, 110);
+  border-radius: 2px;
+}
+
+.levelup-animation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.levelup-animation p {
+  position: relative;
+  background-color: rgba(240, 128, 128, 0.9);
+  color: white;
+  font-size: 30px;
+  font-weight: 400;
+  padding: 10px 30px;
+  border-radius: 5px;
+  opacity: 0;
+  text-align: center;
+  animation: levelup 4s;
+}
+
+@keyframes levelup {
+  0%,
+  100% {
+    opacity: 0;
+    transform: scaleX(-1);
+  }
+  25%,
+  75% {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+}

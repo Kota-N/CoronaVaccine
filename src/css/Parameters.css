@@ -1,0 +1,79 @@
+.Parameters {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 22vh;
+  padding: 4px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.Parameters img {
+  width: 5vh;
+  margin: 4px;
+}
+
+.vaccine-count-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: rgb(56, 80, 110) 1px solid;
+  width: 90%;
+  margin: 10px;
+}
+
+.vaccine-count-container .count-and-icon {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 50%;
+}
+
+.money-count-container {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.plus-money-animation {
+  position: absolute;
+  left: 10px;
+}
+
+.plus-money {
+  position: absolute;
+  font-weight: 500;
+  text-shadow: 2px 2px 5px black;
+  color: greenyellow;
+  animation: plusMoney 1s ease-in-out;
+}
+
+@keyframes plusMoney {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+}
+
+.Parameters button {
+  border: none;
+  width: 120px;
+  height: 30px;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 2px;
+  font-size: 20px;
+  font-weight: 200;
+  color: white;
+  background-color: rgb(56, 80, 110);
+}
+
+.Parameters h5 {
+  font-weight: 300;
+  padding: 1px 10px;
+  border-radius: 2px;
+}
