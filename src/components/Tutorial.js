@@ -5,12 +5,12 @@ const Tutorial = ({ money, vaccine, soldVaccine }) => {
   const [currentHint, setCurrentHint] = useState(0);
   const messageData = [
     'COVID-19 has changed some people into zombies!',
-    'Make vaccine to save them!',
+    'Make vaccines to save them!',
   ];
   const hintData = [
-    'Click to make vaccine',
-    'Sell vaccine to earn coins',
-    'Use vaccine you have sold',
+    'Click to make a vaccine',
+    'Sell vaccines to earn coins',
+    'Use vaccines you have sold',
   ];
 
   useEffect(() => {
@@ -26,7 +26,7 @@ const Tutorial = ({ money, vaccine, soldVaccine }) => {
         }
       }
     }
-  }, [money, vaccine, soldVaccine]);
+  }, [money, vaccine, soldVaccine, currentHint, hintData]);
 
   useEffect(() => {
     const hintContainer = document.querySelector('.hint-container');

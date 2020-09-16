@@ -8,7 +8,7 @@ const FeministMenu = ({
   setClickFeminist,
   setFeministVps,
 }) => {
-  const [price, setPrice] = useState(3200);
+  const [price, setPrice] = useState(3100);
   const [count, setCount] = useState(0);
   const [vps, setVps] = useState(350);
 
@@ -40,7 +40,7 @@ const FeministMenu = ({
       'A superior being who does not even need to plan parenthood';
     upgradeBtn.classList.add('hide');
 
-    setVps(1240);
+    setVps(1440);
   };
 
   return (

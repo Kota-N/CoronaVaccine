@@ -13,6 +13,8 @@ import './css/Tutorial.css';
 import './css/StartMessage.css';
 import './css/HireTutorial.css';
 import './css/ClickerExp.css';
+import './css/GameOver.css';
+import './css/Win.css';
 import './css/media.css';
 
 ReactDOM.render(

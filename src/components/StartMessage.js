@@ -4,7 +4,7 @@ const StartMessage = ({ setIsTutorial, startMessage, setStartMessage }) => {
   const [currentMessage, setCurrentMessage] = useState(0);
   const messageData = [
     'Wow, You did it!',
-    'There is no more zombies!',
+    'There are no more zombies!',
     'Wait a second... What is that!?',
     'Bill the Billionaire is rapidly disseminating COVID-19 in US!',
   ];
