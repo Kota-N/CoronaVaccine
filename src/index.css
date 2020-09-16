@@ -25,3 +25,7 @@ p {
   font-weight: 100;
   cursor: default;
 }
+
+div {
+  touch-action: manipulation;
+}
