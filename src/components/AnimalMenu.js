@@ -8,7 +8,7 @@ const AnimalMenu = ({
   setClickAnimal,
   setAnimalVps,
 }) => {
-  const [price, setPrice] = useState(22000);
+  const [price, setPrice] = useState(24500);
   const [count, setCount] = useState(0);
   const [vps, setVps] = useState(2800);
 
@@ -66,7 +66,7 @@ const AnimalMenu = ({
 
         <button onClick={() => setClickAnimal(false)}>EXIT</button>
       </div>
-      {count >= 5 && (
+      {count >= 50 && (
         <button onMouseUp={upgrade} className="upgrade">
           UPGRADE
         </button>

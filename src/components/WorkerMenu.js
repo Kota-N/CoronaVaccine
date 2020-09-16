@@ -64,7 +64,7 @@ const WorkerMenu = ({
 
         <button onClick={() => setClickWorker(false)}>EXIT</button>
       </div>
-      {count >= 5 && (
+      {count >= 100 && (
         <button onMouseUp={upgrade} className="upgrade">
           UPGRADE
         </button>

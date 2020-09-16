@@ -13,6 +13,7 @@ import './css/Tutorial.css';
 import './css/StartMessage.css';
 import './css/HireTutorial.css';
 import './css/ClickerExp.css';
+import './css/media.css';
 
 ReactDOM.render(
   <React.StrictMode>

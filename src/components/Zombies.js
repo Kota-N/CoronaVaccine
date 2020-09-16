@@ -8,7 +8,7 @@ const Zombies = ({
   isTutorial,
   setIsTutorial,
 }) => {
-  const [zombies, setZombies] = useState(5);
+  const [zombies, setZombies] = useState(50);
   const [startMessage, setStartMessage] = useState(false);
 
   useEffect(() => {
@@ -19,11 +19,15 @@ const Zombies = ({
     if (!isTutorial) {
       countAndIcon.style.justifyContent = 'flex-start';
       const interval = setInterval(() => {
-        setZombies(prev => (prev += 2111));
+        setZombies(prev => (prev += 5111));
       }, 20);
       return () => clearInterval(interval);
     }
   }, [isTutorial]);
+
+  const addCommasToNumber = number => {
+    return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+  };
 
   const useVaccine = () => {
     const parentDiv = document.querySelector('.decrease-animation');
@@ -34,7 +38,7 @@ const Zombies = ({
       // Decrease Animation
       minusZombieDiv.innerHTML = `
     <img src=${zombieIcon} alt="zombie icon" />
-    <p>-${soldVaccine}</p>
+    <p>-${addCommasToNumber(soldVaccine)}</p>
     `;
       parentDiv.appendChild(minusZombieDiv);
       setTimeout(() => {
@@ -47,7 +51,7 @@ const Zombies = ({
       // Decrease Animation
       minusZombieDiv.innerHTML = `
     <img src=${zombieIcon} alt="zombie icon" />
-    <p>-${zombies}</p>
+    <p>-${addCommasToNumber(zombies)}</p>
     `;
       parentDiv.appendChild(minusZombieDiv);
       setTimeout(() => {
@@ -60,10 +64,6 @@ const Zombies = ({
     }
   };
 
-  const addCommasToNumber = number => {
-    return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
-  };
-
   return (
     <div className="Zombies">
       <div className="zombie-count-container">
@@ -74,7 +74,9 @@ const Zombies = ({
         </div>
         {!isTutorial && <p className="population">/300,000,000</p>}
       </div>
-      <button onMouseUp={useVaccine}>Use Vaccine ({soldVaccine})</button>
+      <button onMouseUp={useVaccine}>
+        Use Vaccine ({addCommasToNumber(soldVaccine)})
+      </button>
       <StartMessage
         setIsTutorial={setIsTutorial}
         startMessage={startMessage}

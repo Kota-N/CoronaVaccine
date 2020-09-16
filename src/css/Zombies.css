@@ -61,7 +61,8 @@
 }
 
 .population {
-  font-weight: 400;
+  font-size: 16px;
+  font-weight: 300;
   color: rgb(56, 80, 110);
   padding: 1px 10px;
 }

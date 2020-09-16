@@ -6,14 +6,18 @@ const Clicker = ({ setVaccine, isTutorial }) => {
   const [clickCount, setClickCount] = useState(0);
   const [incrementAmount, setIncrementAmount] = useState(1);
 
+  const addCommasToNumber = number => {
+    return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+  };
+
   const handleClick = () => {
     // Click Animation
     const parentDiv = document.querySelector('.click-animation');
     const clickedDiv = document.createElement('div');
     clickedDiv.classList.add('clicked-div');
     clickedDiv.innerHTML = `
-    <img src=${vaccine} alt="vaccine icon" width="90px" />
-    <p>+${incrementAmount}</p>
+    <img src=${vaccine} alt="vaccine icon" width="90px" height="90px" />
+    <p>+${addCommasToNumber(incrementAmount)}</p>
     `;
     parentDiv.appendChild(clickedDiv);
     setTimeout(() => {

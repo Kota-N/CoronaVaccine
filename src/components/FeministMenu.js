@@ -64,7 +64,7 @@ const FeministMenu = ({
 
         <button onClick={() => setClickFeminist(false)}>EXIT</button>
       </div>
-      {count >= 5 && (
+      {count >= 75 && (
         <button onMouseUp={upgrade} className="upgrade">
           UPGRADE
         </button>
