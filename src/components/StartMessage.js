@@ -3,10 +3,10 @@ import React, { useEffect, useState } from 'react';
 const StartMessage = ({ setIsTutorial, startMessage, setStartMessage }) => {
   const [currentMessage, setCurrentMessage] = useState(0);
   const messageData = [
-    'Wow, You did it!',
+    'Wow, you did it!',
     'There are no more zombies!',
     'Wait a second... What is that!?',
-    'Bill the Billionaire is rapidly disseminating COVID-19 in US!',
+    'Bill the Billionaire is rapidly disseminating COVID-19 in the US!',
   ];
 
   const nextMessage = () => {

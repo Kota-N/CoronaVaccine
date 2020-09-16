@@ -20,6 +20,7 @@
   background-color: rgb(35, 50, 68);
   border-radius: 5px;
   padding: 10px;
+  touch-action: manipulation;
 }
 
 .Tutorial .message-container p {
