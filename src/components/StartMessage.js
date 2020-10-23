@@ -6,7 +6,7 @@ const StartMessage = ({ setIsTutorial, startMessage, setStartMessage }) => {
     'Wow, You did it!',
     'There are no more zombies!',
     'Wait a second... What is that!?',
-    'Bill the Billionaire is rapidly disseminating COVID-19 in US!',
+    'Dr. Zombie is rapidly disseminating COVID-19 in US!',
   ];
 
   const nextMessage = () => {
