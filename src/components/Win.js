@@ -4,20 +4,20 @@ const Win = () => {
   const [currentPage, setCurrentPage] = useState(0);
   const messageData = [
     'Wow!',
-    'You finally stopped Bill the Billionaire.',
+    'You finally stopped Dr.Zombie.',
     '...',
     'What?',
     '"Is that it?"',
     'Well, I guess I can congratulate you a little more.',
-    'You saved the entire America! You are the hero! Yay!',
+    'You saved America! You are the hero! Yay!',
     '...',
     'What?',
-    'Okay, okay, I give you a special secret.',
+    "Okay, okay, I'll give you a special secret.",
     'Did you know you can upgrade helpers once you hire a certain amount?',
     'Upgraded helpers are even more powerful.',
     'Oh, you know it already?',
-    'Then, all I can say is "don\'t underestimate your own clicking.',
-    'Try it out!',
+    'Well, the ultimate hint is "Don\'t underestimate your own tapping!"',
+    "Let's try it again!",
   ];
 
   useEffect(() => {

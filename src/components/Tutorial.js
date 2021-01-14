@@ -4,7 +4,7 @@ const Tutorial = ({ money, vaccine, soldVaccine }) => {
   const [currentMessage, setCurrentMessage] = useState(0);
   const [currentHint, setCurrentHint] = useState(0);
   const messageData = [
-    'COVID-19 has changed some people into zombies!',
+    'ZOMBIE-19 has changed some people into zombies!',
     'Make vaccines to save them!',
   ];
   const hintData = [

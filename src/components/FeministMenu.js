@@ -37,7 +37,7 @@ const FeministMenu = ({
 
     helperTitle.innerText = 'AOC';
     helperDescription.innerText =
-      'A superior being who does not even need to plan parenthood';
+      'A superior being who is very expert at zombies';
     upgradeBtn.classList.add('hide');
 
     setVps(1440);
@@ -53,7 +53,7 @@ const FeministMenu = ({
       </h4>
       <h5>{addCommasToNumber(vps)} vps</h5>
       <img src={feministBtn} alt="feminist icon" />
-      <p className="description">Womankind who plans parenthood well</p>
+      <p className="description">An expert who is expert at zombies</p>
       <div className="btn-container">
         <button
           style={money < price ? { opacity: '0.4' } : { opacity: '1' }}

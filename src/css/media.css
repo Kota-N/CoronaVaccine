@@ -65,4 +65,8 @@
     width: 100px;
     height: 100px;
   }
+
+  .HireNav .helper-container .helper img {
+    width: 100px;
+  }
 }

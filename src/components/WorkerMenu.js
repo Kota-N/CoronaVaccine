@@ -37,7 +37,7 @@ const WorkerMenu = ({
 
     helperTitle.innerText = 'Corrupted Worker';
     helperDescription.innerText =
-      'An obsequious worker who fawns all over authorities';
+      'A super worker who thinks in terms of science';
     upgradeBtn.classList.add('hide');
 
     setVps(720);
@@ -53,7 +53,7 @@ const WorkerMenu = ({
       </h4>
       <h5>{addCommasToNumber(vps)} vps</h5>
       <img src={workerBtn} alt="worker icon" />
-      <p className="description">A person with a great servile mentality</p>
+      <p className="description">A person with a scientific mentality</p>
       <div className="btn-container">
         <button
           style={money < price ? { opacity: '0.4' } : { opacity: '1' }}

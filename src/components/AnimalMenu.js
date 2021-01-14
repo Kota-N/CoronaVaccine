@@ -36,8 +36,7 @@ const AnimalMenu = ({
     const upgradeBtn = document.querySelector('.AnimalMenu .upgrade');
 
     helperTitle.innerText = 'Killer Bear';
-    helperDescription.innerText =
-      'A bear protected by animal rights which can freely eat humans';
+    helperDescription.innerText = 'A bear is very big and scary';
     upgradeBtn.classList.add('hide');
 
     setVps(8440);
@@ -54,7 +53,7 @@ const AnimalMenu = ({
       <h5>{addCommasToNumber(vps)} vps</h5>
       <img src={animalBtn} alt="animal advocate icon" />
       <p className="description">
-        An animal lover who saves animals while children are dying in the world
+        An animal that eats dog food and also saves people
       </p>
       <div className="btn-container">
         <button
