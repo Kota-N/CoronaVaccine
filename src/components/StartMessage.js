@@ -6,11 +6,7 @@ const StartMessage = ({ setIsTutorial, startMessage, setStartMessage }) => {
     'Wow, you did it!',
     'There are no more zombies!',
     'Wait a second... What is that!?',
-<<<<<<< HEAD
-    'Dr.Zombie is rapidly disseminating ZOMBIE-19 in US!',
-=======
-    'Dr. Zombie is rapidly disseminating COVID-19 in US!',
->>>>>>> b89c720e288a24f1e619a9abc68b6080c9786ac1
+    'Dr. Zombie is rapidly disseminating ZOMBIE-19 in the US!',
   ];
 
   const nextMessage = () => {
